@@ -1,0 +1,162 @@
+/* style.css */
+
+body {
+    background-color: aquamarine;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid rgb(250, 245, 245);
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #eee4e4;
+}
+
+#h1css {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+img {
+    padding: 10px;
+    margin: 10px;
+}
+
+
+.fixed {
+    background-color: yellow;
+    position: fixed;
+    top: 100px;
+    left: 20px; 
+    padding: 10px;
+    width: 200px; 
+}
+
+.relative {
+    background-color: lightblue;
+    position: relative;
+    top: 20px; 
+    left: 260px; 
+    padding: 10px;
+    width: 200px; 
+}
+
+#absolute {
+    background-color: lightgreen;
+    position: absolute;
+    top: 50px; 
+    left: 20px; 
+    padding: 10px;
+    width: 200px; 
+}
+
+.sticky {
+    background-color: lightcoral;
+    position: sticky;
+    top: 20px; 
+    padding: 10px;
+    width: 200px; 
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.example {
+    margin-bottom: 20px;
+}
+
+.example h2 {
+    color: #333;
+}
+
+.example p {
+    margin-top: 5px;
+    color: #666;
+}
+
+.fixed, .absolute, .relative, .sticky {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.fixed {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+.absolute {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+}
+
+.relative {
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+.sticky {
+    position: sticky;
+    top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 20px;
+}
+
+.attribute-example {
+    margin-top: 20px;
+}
+
+.attribute-example h2 {
+    color: #333;
+}
+
+#uniqueId {
+    padding: 10px;
+    background-color: #ffeeba;
+    border: 1px solid #ffc107;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.sharedClass {
+    padding: 10px;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    border-radius: 4px;
+    margin-top: 10px;
+}

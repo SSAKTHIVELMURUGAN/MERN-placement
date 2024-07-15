@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MERN</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Additional inline styles for specific elements */
+        body {
+            background-color: aquamarine;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: rgb(62, 9, 255);
+        }
+        h3 {
+            color: rgb(206, 10, 53);
+            margin-bottom: 5px;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Difference Between Semantic and Non-Semantic Tags in HTML</h1>
+    <table>
+        <tr>
+            <th>Aspect</th>
+            <th>Semantic Tags</th>
+            <th>Non-Semantic Tags</th>
+        </tr>
+        <tr>
+            <td>Definition</td>
+            <td>Tags that clearly describe their meaning and content.</td>
+            <td>Tags that do not provide information about their content.</td>
+        </tr>
+        <tr>
+            <td>Examples</td>
+            <td>
+                <ul>
+                    <li>&lt;header&gt;</li>
+                    <li>&lt;nav&gt;</li>
+                    <li>&lt;article&gt;</li>
+                    <li>&lt;section&gt;</li>
+                    <li>&lt;footer&gt;</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>&lt;div&gt;</li>
+                    <li>&lt;span&gt;</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Usage</td>
+            <td>Helps in understanding the structure and meaning of the content.</td>
+            <td>Used for generic containers when semantic meaning is not needed.</td>
+        </tr>
+        <tr>
+            <td>Accessibility</td>
+            <td>Improves accessibility for assistive technologies.</td>
+            <td>Less helpful for accessibility purposes.</td>
+        </tr>
+        <tr>
+            <td>SEO</td>
+            <td>Helps search engines better understand the content.</td>
+            <td>Does not aid in SEO as much as semantic tags.</td>
+        </tr>
+    </table>
+
+    <h1 id="h1css">Difference Between Internal CSS and External CSS</h1>
+    <table>
+        <tr>
+            <th>Aspect</th>
+            <th>Internal CSS</th>
+            <th>External CSS</th>
+        </tr>
+        <tr>
+            <td>Definition</td>
+            <td>CSS styles defined within the &lt;style&gt; tag in the HTML document.</td>
+            <td>CSS styles defined in a separate .css file linked to the HTML document.</td>
+        </tr>
+        <tr>
+            <td>Location</td>
+            <td>Inside the &lt;head&gt; section of the HTML document.</td>
+            <td>In a separate file, typically with a .css extension.</td>
+        </tr>
+        <tr>
+            <td>File Management</td>
+            <td>Styles are embedded directly in the HTML file.</td>
+            <td>Styles are placed in an external file, separate from the HTML.</td>
+        </tr>
+        <tr>
+            <td>Use Case</td>
+            <td>Suitable for small projects or single-page documents.</td>
+            <td>Suitable for larger projects or sites with multiple pages.</td>
+        </tr>
+    </table>
+
+    <img src="css.jpg" alt="Difference css" width="602" height="452">
+   
+    <h3>Attributes in HTML</h3>
+    <ul>
+        <li><strong>id Attribute:</strong> Uniquely identifies a single HTML element.</li>
+        <li><strong>class Attribute:</strong> Assigns one or more classes to an element, allowing for shared styling.</li>
+        <li><strong>name Attribute:</strong> Used to reference form elements during data submission.</li>
+        <li><strong>data Attributes:</strong> Used to store custom data private to the page or application.</li>
+        <li><strong>Global Attributes:</strong> Attributes that can be used on any HTML element, such as style, title, lang, dir, hidden, and tabindex.</li>
+    </ul>
+
+    <!-- Examples for position -->
+    <div class="fixed">Fixed Position Example</div>
+    <div class="relative">Relative Position Example</div>
+    <div id="absolute">Absolute Position Example</div>
+    <div class="sticky">Sticky Position Example</div>
+
+    <div class="container">
+        <h1>CSS Positioning Types</h1>
+        <div class="example">
+            <h2>Fixed Position</h2>
+            <p>Elements with <code>position: fixed;</code> are positioned relative to the viewport.</p>
+            <div class="fixed">Fixed Element</div>
+        </div>
+        <div class="example">
+            <h2>Absolute Position</h2>
+            <p>Elements with <code>position: absolute;</code> are positioned relative to the nearest positioned ancestor.</p>
+            <div class="absolute">Absolute Element</div>
+        </div>
+        <div class="example">
+            <h2>Relative Position</h2>
+            <p>Elements with <code>position: relative;</code> are positioned relative to their normal position.</p>
+            <div class="relative">Relative Element</div>
+        </div>
+        <div class="example">
+            <h2>Sticky Position</h2>
+            <p>Elements with <code>position: sticky;</code> behave like <code>position: relative;</code> until a specified scroll point.</p>
+            <div class="sticky">Sticky Element</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>HTML Attributes</h1>
+        <ul>
+            <li><strong>id Attribute:</strong> Uniquely identifies a single HTML element.</li>
+            <li><strong>class Attribute:</strong> Assigns one or more classes to an element for shared styling.</li>
+        </ul>
+        <div class="attribute-example">
+            <h2>Example of id Attribute</h2>
+            <div id="uniqueId">Element with id attribute</div>
+        </div>
+        <div class="attribute-example">
+            <h2>Example of class Attribute</h2>
+            <div class="sharedClass">Element with class attribute</div>
+        </div>
+    </div>
+    
+</body>
+</html>
