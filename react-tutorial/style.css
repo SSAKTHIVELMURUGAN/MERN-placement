@@ -12,7 +12,8 @@ table {
     border-collapse: collapse;
 }
 
-th, td {
+th,
+td {
     border: 1px solid rgb(250, 245, 245);
     padding: 10px;
     text-align: left;
@@ -38,35 +39,35 @@ img {
     background-color: yellow;
     position: fixed;
     top: 100px;
-    left: 20px; 
+    left: 20px;
     padding: 10px;
-    width: 200px; 
+    width: 200px;
 }
 
 .relative {
     background-color: lightblue;
     position: relative;
-    top: 20px; 
-    left: 260px; 
+    top: 20px;
+    left: 260px;
     padding: 10px;
-    width: 200px; 
+    width: 200px;
 }
 
 #absolute {
     background-color: lightgreen;
     position: absolute;
-    top: 50px; 
-    left: 20px; 
+    top: 50px;
+    left: 20px;
     padding: 10px;
-    width: 200px; 
+    width: 200px;
 }
 
 .sticky {
     background-color: lightcoral;
     position: sticky;
-    top: 20px; 
+    top: 20px;
     padding: 10px;
-    width: 200px; 
+    width: 200px;
 }
 
 
@@ -100,7 +101,10 @@ body {
     color: #666;
 }
 
-.fixed, .absolute, .relative, .sticky {
+.fixed,
+.absolute,
+.relative,
+.sticky {
     margin-top: 10px;
     padding: 10px;
     background-color: #f0f0f0;
@@ -159,4 +163,62 @@ ul {
     border: 1px solid #c3e6cb;
     border-radius: 4px;
     margin-top: 10px;
+}
+
+.flex-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.flex-item {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    flex: 1 0 200px
+}
+
+h1 {
+    color: #333;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+h2 {
+    margin-top: 20px;
+    color: #666;
+}
+h3 {
+    margin-top: 10px;
+    color: #999;
+}
+.property {
+    margin-top: 10px;
+}
+.property-name {
+    color: #06c;
+}
+.property-description {
+    margin-left: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.grid-item {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    font-size: 1.5em;
+    text-align: center;
 }

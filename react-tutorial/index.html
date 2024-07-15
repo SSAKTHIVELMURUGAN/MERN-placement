@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>MERN</title>
@@ -12,22 +13,27 @@
             margin: 0;
             padding: 20px;
         }
+
         h1 {
             color: rgb(62, 9, 255);
         }
+
         h3 {
             color: rgb(206, 10, 53);
             margin-bottom: 5px;
         }
+
         ul {
             list-style-type: none;
             padding-left: 0;
         }
+
         li {
             margin-bottom: 10px;
         }
     </style>
 </head>
+
 <body>
     <h1>Difference Between Semantic and Non-Semantic Tags in HTML</h1>
     <table>
@@ -106,14 +112,16 @@
     </table>
 
     <img src="css.jpg" alt="Difference css" width="602" height="452">
-   
+
     <h3>Attributes in HTML</h3>
     <ul>
         <li><strong>id Attribute:</strong> Uniquely identifies a single HTML element.</li>
-        <li><strong>class Attribute:</strong> Assigns one or more classes to an element, allowing for shared styling.</li>
+        <li><strong>class Attribute:</strong> Assigns one or more classes to an element, allowing for shared styling.
+        </li>
         <li><strong>name Attribute:</strong> Used to reference form elements during data submission.</li>
         <li><strong>data Attributes:</strong> Used to store custom data private to the page or application.</li>
-        <li><strong>Global Attributes:</strong> Attributes that can be used on any HTML element, such as style, title, lang, dir, hidden, and tabindex.</li>
+        <li><strong>Global Attributes:</strong> Attributes that can be used on any HTML element, such as style, title,
+            lang, dir, hidden, and tabindex.</li>
     </ul>
 
     <!-- Examples for position -->
@@ -131,7 +139,8 @@
         </div>
         <div class="example">
             <h2>Absolute Position</h2>
-            <p>Elements with <code>position: absolute;</code> are positioned relative to the nearest positioned ancestor.</p>
+            <p>Elements with <code>position: absolute;</code> are positioned relative to the nearest positioned
+                ancestor.</p>
             <div class="absolute">Absolute Element</div>
         </div>
         <div class="example">
@@ -141,7 +150,8 @@
         </div>
         <div class="example">
             <h2>Sticky Position</h2>
-            <p>Elements with <code>position: sticky;</code> behave like <code>position: relative;</code> until a specified scroll point.</p>
+            <p>Elements with <code>position: sticky;</code> behave like <code>position: relative;</code> until a
+                specified scroll point.</p>
             <div class="sticky">Sticky Element</div>
         </div>
     </div>
@@ -161,6 +171,186 @@
             <div class="sharedClass">Element with class attribute</div>
         </div>
     </div>
-    
+
+    <h1>Displaying External Website</h1>
+    <iframe src="https://flexboxfroggy.com/" width="100%" height="600px" frameborder="0"></iframe>
+    <br>
+
+    <h1>Flex Improves the responsive</h1>
+    <div class="flex-container">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+    </div>
+
+    <h1>CSS Flexbox Overview</h1>
+
+    <h2>CSS Flex Container</h2>
+
+    <div class="property">
+        <div class="property-name">display</div>
+        <div class="property-description">
+            Defines the element as a flex container, enabling flexbox layout for its children (flex items). Values include <code>flex</code> and <code>inline-flex</code>.
+        </div>
+    </div>
+
+    <div class="property">
+        <div class="property-name">flex-direction</div>
+        <div class="property-description">
+            Specifies the direction of the main axis along which flex items are laid out. Values include <code>row</code>, <code>row-reverse</code>, <code>column</code>, and <code>column-reverse</code>.
+        </div>
+    </div>
+
+    <div class="property">
+        <div class="property-name">flex-wrap</div>
+        <div class="property-description">
+            Controls whether flex items are forced onto a single line or can wrap onto multiple lines. Values include <code>nowrap</code>, <code>wrap</code>, and <code>wrap-reverse</code>.
+        </div>
+    </div>
+
+    <div class="property">
+        <div class="property-name">flex-flow</div>
+        <div class="property-description">
+            Shorthand for setting both <code>flex-direction</code> and <code>flex-wrap</code> in one declaration. Syntax: <code>flex-flow: &lt;flex-direction&gt; &lt;flex-wrap&gt;</code>.
+        </div>
+    </div>
+
+    <div class="property">
+        <div class="property-name">justify-content</div>
+        <div class="property-description">
+            Aligns flex items along the main axis. Values include <code>flex-start</code>, <code>flex-end</code>, <code>center</code>, <code>space-between</code>, <code>space-around</code>, and <code>space-evenly</code>.
+        </div>
+    </div>
+
+    <div class="property">
+        <div class="property-name">align-items</div>
+        <div class="property-description">
+            Aligns flex items along the cross axis (perpendicular to the main axis). Values include <code>flex-start</code>, <code>flex-end</code>, <code>center</code>, <code>baseline</code>, and <code>stretch</code>.
+        </div>
+    </div>
+
+    <div class="property">
+        <div class="property-name">align-content</div>
+        <div class="property-description">
+            Aligns lines of flex items when there is extra space in the cross axis (multiline flex containers). Values include <code>flex-start</code>, <code>flex-end</code>, <code>center</code>, <code>space-between</code>, <code>space-around</code>, and <code>stretch</code>.
+        </div>
+    </div>
+
+    <h2>CSS Flex Items</h2>
+
+    <div class="property">
+        <div class="property-name">flex</div>
+        <div class="property-description">
+            Shorthand for setting <code>flex-grow</code>, <code>flex-shrink</code>, and <code>flex-basis</code> of a flex item. Syntax: <code>flex: &lt;flex-grow&gt; &lt;flex-shrink&gt; &lt;flex-basis&gt;</code>.
+        </div>
+    </div>
+
+    <div class="property">
+        <div class="property-name">flex-grow</div>
+        <div class="property-description">
+            Specifies how much a flex item should grow relative to the other flex items. Default is <code>0</code>.
+        </div>
+    </div>
+
+    <div class="property">
+        <div class="property-name">flex-shrink</div>
+        <div class="property-description">
+            Specifies how much a flex item should shrink relative to the other flex items. Default is <code>1</code>.
+        </div>
+    </div>
+
+    <div class="property">
+        <div class="property-name">flex-basis</div>
+        <div class="property-description">
+            Defines the initial size of a flex item before additional space is distributed. Default is <code>auto</code>.
+        </div>
+    </div>
+
+    <div class="property">
+        <div class="property-name">order</div>
+        <div class="property-description">
+            Controls the order of flex items within a flex container. Default is <code>0</code>.
+        </div>
+    </div>
+
+    <div class="property">
+        <div class="property-name">align-self</div>
+        <div class="property-description">
+            Allows a flex item to override the <code>align-items</code> value for its own alignment. Values include <code>auto</code>, <code>flex-start</code>, <code>flex-end</code>, <code>center</code>, <code>baseline</code>, and <code>stretch</code>.
+        </div>
+    </div>
+
+    <h2>CSS Flex Responsive</h2>
+
+    <div class="property">
+        <div class="property-name">Media Queries</div>
+        <div class="property-description">
+            Used to apply different styles for different screen sizes. Example syntax:
+            <pre><code>@media (max-width: 768px) {
+    /* Styles applied when screen width is 768px or less */
+}</code></pre>
+        </div>
+    </div>
+
+    <div class="property">
+        <div class="property-name">Example: Responsive Flex Container</div>
+        <div class="property-description">
+            <pre><code>.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}</code></pre>
+        </div>
+    </div>
+
+    <div class="property">
+        <div class="property-name">Example: Responsive Flex Item</div>
+        <div class="property-description">
+            <pre><code>.flex-item {
+    flex: 1 1 200px;
+}
+
+@media (max-width: 768px) {
+    .flex-item {
+        flex: 1 1 100%;
+    }
+}</code></pre>
+        </div>
+    </div>
+
+    <h2>Summary</h2>
+
+    <div class="property">
+        <div class="property-description">
+            CSS Flexbox provides a powerful layout mechanism for creating flexible and responsive designs. Understanding these properties allows you to effectively structure and align content in modern web layouts, adapting to various screen sizes and orientations. Adjust these properties based on your specific layout requirements to achieve optimal design flexibility and responsiveness.
+        </div>
+    </div>
+
+    <div class="grid-container">
+        <div class="grid-item">Item 1</div>
+        <div class="grid-item">Item 2</div>
+        <div class="grid-item">Item 3</div>
+        <div class="grid-item">Item 4</div>
+        <div class="grid-item">Item 5</div>
+        <div class="grid-item">Item 6</div>
+        <div class="grid-item">Item 7</div>
+        <div class="grid-item">Item 8</div>
+        <div class="grid-item">Item 9</div>
+    </div>
+
 </body>
+
 </html>
